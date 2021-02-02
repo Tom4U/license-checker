@@ -93,7 +93,7 @@ checker.init(args, function (err, json) {
   } else if (args.summary) {
     formattedOutput = checker.asSummary(json);
   } else {
-    formattedOutput = checker.asTree(checker.asJson(json, args.customFormat));
+    formattedOutput = checker.asTree(json);
   }
 
   if (args.files) {
